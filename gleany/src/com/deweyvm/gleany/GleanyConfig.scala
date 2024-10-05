@@ -21,10 +21,11 @@
 
 package com.deweyvm.gleany
 
-import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration
 import com.deweyvm.gleany.graphics.display.Display
 import com.deweyvm.gleany.saving.{AudioSettings, VideoSettings}
 import com.badlogic.gdx.Files
+import com.badlogic.gdx.Graphics.DisplayMode
 import com.deweyvm.gleany.data.Point2i
 
 
@@ -32,7 +33,7 @@ case class GleanyConfig(
     settings: VideoSettings with AudioSettings,
     title: String = "GleanyGame",
     iconPath: Seq[String] = Seq()) {
-  def toLwjgl: LwjglApplicationConfiguration = lwjglConfig
+  def toLwjgl: Lwjgl3ApplicationConfiguration  = lwjglConfig
 
   def getScreenSize:Point2i = {
     try {
@@ -46,37 +47,32 @@ case class GleanyConfig(
 
 
   private val lwjglConfig = {
-    val config = new LwjglApplicationConfiguration
-    config.title = title
-    config.vSyncEnabled = true
+    val config = new Lwjgl3ApplicationConfiguration()
+    config.setTitle( title)
+    config.useVsync(true)
     iconPath foreach {
       path =>
-        config.addIcon(path, Files.FileType.Internal)
+        config.setWindowIcon(Files.FileType.Internal, path)
     }
     val desktopSize = getScreenSize
     settings.getDisplayType match {
       case Display.Fullscreen =>
-        config.width = desktopSize.x
-        config.height = desktopSize.y
-        config.fullscreen = true
+        //val displayModes = Gdx.graphics.getDisplayModes
+        ???//port TODO
+        //new DisplayMode(desktopSize.x, desktopSize.y, 60, 32)
+        //config.setFullscreenMode(displayMode)
       case Display.WindowedFullscreen =>
-        config.width = desktopSize.x
-        config.height = desktopSize.y
-        config.resizable = false
-        System.setProperty("org.lwjgl.opengl.Window.undecorated", "true")
-        config.fullscreen = false
+        config.setWindowedMode(desktopSize.x,desktopSize.y)
+        config.setResizable(false)
+        config.setDecorated(false);
       case Display.Windowed =>
         val size = settings.getWindowSize
-        config.width = size.x
-        config.height = size.y
-        config.fullscreen = false
+        config.setWindowedMode(size.x,size.y)
       case Display.BorderlessWindow =>
         val size = settings.getWindowSize
-        config.width = size.x
-        config.height = size.y
-        config.resizable = false
-        System.setProperty("org.lwjgl.opengl.Window.undecorated", "true")
-        config.fullscreen = false
+        config.setWindowedMode(size.x,size.y)
+        config.setResizable(false)
+        config.setDecorated(false)
     }
     config
   }

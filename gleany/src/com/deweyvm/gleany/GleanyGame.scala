@@ -22,25 +22,25 @@
 package com.deweyvm.gleany
 
 import com.badlogic.gdx.{Application, Gdx, ApplicationListener}
-import com.badlogic.gdx.backends.lwjgl.LwjglApplication
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application
 
-
+//port TODO - add StartupHelper from modern libgdx
 object GleanyGame {
-  def exit() {
+  def exit(): Unit = {
     Gdx.app.exit()
   }
 
   /**
    * this function does not return while the game is running
    */
-  def runGame(config: GleanyConfig, game: GleanyGame) {
-    new LwjglApplication(game, config.toLwjgl)
+  def runGame(config: GleanyConfig, game: GleanyGame): Unit = {
+    new Lwjgl3Application(game, config.toLwjgl)
   }
 }
 
 abstract class GleanyGame(initializer: GleanyInitializer) extends ApplicationListener {
 
-  def gleanyUpdate() {
+  def gleanyUpdate(): Unit = {
     Glean.y.audio.update()
   }
 
@@ -48,23 +48,23 @@ abstract class GleanyGame(initializer: GleanyInitializer) extends ApplicationLis
 
   def draw(): Unit
 
-  override def create() {
+  override def create(): Unit = {
     Gdx.app.setLogLevel(Application.LOG_NONE)
     Glean.y = new Gleany(initializer.pathResolver, initializer.settings)
   }
 
-  override def render() {
+  override def render(): Unit = {
     gleanyUpdate()
     update()
     draw()
   }
 
-  override def dispose() {}
+  override def dispose(): Unit = {}
 
-  override def pause() {}
+  override def pause(): Unit = {}
 
-  override def resume() {}
+  override def resume(): Unit = {}
 
-  override def resize(width: Int, height: Int) {}
+  override def resize(width: Int, height: Int): Unit = {}
 }
 

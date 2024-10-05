@@ -22,10 +22,9 @@
 package com.deweyvm.gleany.data
 
 case class Point3d(x:Double, y:Double, z:Double) {
-  def ×(b:Point3d) = {
+  def ×(b:Point3d) = 
     val a = this
     Point3d( a.y * b.z - a.z * b.y,
              a.z * b.x - a.x * b.z,
              a.x * b.y - a.y * b.x )
-  }
 }

@@ -1,7 +1,8 @@
 package com.badlogic.gdx.controllers.desktop
 
-import com.badlogic.gdx.controllers.{Controller, ControlType}
+import com.badlogic.gdx.controllers.Controller
 import com.deweyvm.gleany.Debug
+import com.deweyvm.gleany.input.ControlType
 
 object HackGetPovs {
   def getPovCount(controller: Controller): Int = {

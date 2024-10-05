@@ -25,6 +25,7 @@ import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.graphics.g2d.{BitmapFont, TextureRegion}
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator
 import com.badlogic.gdx.Gdx
+import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter
 import com.deweyvm.gleany.data.Recti
 import com.deweyvm.gleany.audio.{Music, Sfx}
 import com.deweyvm.gleany.loading.GleanyTiledMap
@@ -42,7 +43,11 @@ object AssetLoader {
 
   def loadFont(name: String, pt: Int): BitmapFont = {
     val gen = new FreeTypeFontGenerator(Glean.y.files.font(name))
-    val font = gen.generateFont(pt, FreeTypeFontGenerator.DEFAULT_CHARS, true)
+    val param = new FreeTypeFontParameter()
+    param.size = pt
+    param.characters = FreeTypeFontGenerator.DEFAULT_CHARS
+    param.flip = true
+    val font = gen.generateFont(param)
     gen.dispose()
     font
   }

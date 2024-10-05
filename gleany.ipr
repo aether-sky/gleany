@@ -1,8 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactManager">
+    <artifact type="jar" name="gleany:jar">
+      <output-path>$PROJECT_DIR$/out/artifacts/gleany_jar</output-path>
+      <root id="archive" name="gleany.jar">
+        <element id="module-output" name="gleany" />
+        <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.scala-lang/scala3-library_3/jars/scala3-library_3-3.5.1.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.13.14.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/gdx-1.12.1.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-3.3.3.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/jorbis-0.0.17.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-stb-3.3.3.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/jamepad-2.0.20.0.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/jlayer-1.0.1-gdx.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-glfw-3.3.3.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/gdx-1.12.1-sources.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-openal-3.3.3.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-opengl-3.3.3.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/gdx-freetype-1.12.1.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-3.3.3-sources.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-jemalloc-3.3.3.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/jorbis-0.0.17-sources.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/gdx-jnigen-loader-2.3.1.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-stb-3.3.3-sources.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/jamepad-2.0.20.0-sources.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/jlayer-1.0.1-gdx-sources.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-glfw-3.3.3-sources.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/gdx-backend-lwjgl3-1.12.1.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-3.3.3-natives-linux.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-3.3.3-natives-macos.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/gdx-controllers-core-2.2.3.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-openal-3.3.3-sources.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-opengl-3.3.3-sources.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/gdx-freetype-1.12.1-sources.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-3.3.3-natives-windows.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-jemalloc-3.3.3-sources.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/gdx-controllers-desktop-2.2.3.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-stb-3.3.3-natives-linux.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-stb-3.3.3-natives-macos.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-glfw-3.3.3-natives-linux.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-glfw-3.3.3-natives-macos.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/gdx-jnigen-loader-2.3.1-sources.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-3.3.3-natives-linux-arm32.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-3.3.3-natives-linux-arm64.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-3.3.3-natives-macos-arm64.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-3.3.3-natives-windows-x86.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-stb-3.3.3-natives-windows.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-glfw-3.3.3-natives-windows.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-openal-3.3.3-natives-linux.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-openal-3.3.3-natives-macos.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-opengl-3.3.3-natives-linux.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-opengl-3.3.3-natives-macos.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/gdx-backend-lwjgl3-1.12.1-sources.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/gdx-controllers-core-2.2.3-sources.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-jemalloc-3.3.3-natives-linux.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-jemalloc-3.3.3-natives-macos.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-openal-3.3.3-natives-windows.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-opengl-3.3.3-natives-windows.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/gdx-platform-1.12.1-natives-desktop.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-stb-3.3.3-natives-linux-arm32.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-stb-3.3.3-natives-linux-arm64.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-stb-3.3.3-natives-macos-arm64.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-stb-3.3.3-natives-windows-x86.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-glfw-3.3.3-natives-linux-arm32.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-glfw-3.3.3-natives-linux-arm64.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-glfw-3.3.3-natives-macos-arm64.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-glfw-3.3.3-natives-windows-x86.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-jemalloc-3.3.3-natives-windows.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/gdx-controllers-desktop-2.2.3-sources.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-openal-3.3.3-natives-linux-arm32.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-openal-3.3.3-natives-linux-arm64.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-openal-3.3.3-natives-macos-arm64.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-openal-3.3.3-natives-windows-x86.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-opengl-3.3.3-natives-linux-arm32.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-opengl-3.3.3-natives-linux-arm64.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-opengl-3.3.3-natives-macos-arm64.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-opengl-3.3.3-natives-windows-x86.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-jemalloc-3.3.3-natives-linux-arm32.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-jemalloc-3.3.3-natives-linux-arm64.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-jemalloc-3.3.3-natives-macos-arm64.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/lwjgl-jemalloc-3.3.3-natives-windows-x86.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$PROJECT_DIR$/gleany/libs/gdx-freetype-platform-1.12.1-natives-desktop.jar" path-in-jar="/" />
+      </root>
+    </artifact>
+  </component>
   <component name="CompilerConfiguration">
-    <option name="DEFAULT_COMPILER" value="Javac" />
-    <resourceExtensions />
     <wildcardResourcePatterns>
       <entry name="!?*.java" />
       <entry name="!?*.form" />
@@ -13,22 +95,20 @@
       <entry name="!?*.kt" />
       <entry name="!?*.clj" />
     </wildcardResourcePatterns>
-    <annotationProcessing>
-      <profile default="true" name="Default" enabled="false">
-        <processorPath useClasspath="true" />
-      </profile>
-    </annotationProcessing>
   </component>
-  <component name="CopyrightManager" default="">
-    <module2copyright />
-  </component>
+  <component name="CopyrightManager" default="" />
   <component name="DependencyValidationManager">
     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
   </component>
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="HighlightingAdvisor">
     <option name="SUGGEST_TYPE_AWARE_HIGHLIGHTING" value="false" />
     <option name="TYPE_AWARE_HIGHLIGHTING_ENABLED" value="true" />
+  </component>
+  <component name="InspectionProjectProfileManager">
+    <profile version="1.0">
+      <option name="myName" value="Project Default" />
+    </profile>
+    <version value="1.0" />
   </component>
   <component name="Palette2">
     <group name="Swing">
@@ -151,12 +231,20 @@
       </item>
     </group>
   </component>
+  <component name="ProjectCodeStyleConfiguration">
+    <option name="PREFERRED_PROJECT_CODE_STYLE" value="Default" />
+    <code_scheme name="Project" version="173">
+      <ScalaCodeStyleSettings>
+        <option name="MULTILINE_STRING_CLOSING_QUOTES_ON_NEW_LINE" value="true" />
+      </ScalaCodeStyleSettings>
+    </code_scheme>
+  </component>
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/gleany.iml" filepath="$PROJECT_DIR$/gleany.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="23" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
@@ -178,7 +266,51 @@
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="" vcs="" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/gleany/libs" vcs="Git" />
+  </component>
+  <component name="libraryTable">
+    <library name="libs">
+      <CLASSES>
+        <root url="file://$PROJECT_DIR$/gleany/libs" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="file://$PROJECT_DIR$/gleany/libs" />
+      </SOURCES>
+      <jarDirectory url="file://$PROJECT_DIR$/gleany/libs" recursive="false" />
+      <jarDirectory url="file://$PROJECT_DIR$/gleany/libs" recursive="false" type="SOURCES" />
+    </library>
+    <library name="scala-sdk-3.5.1" type="Scala">
+      <properties>
+        <language-level>Scala_3_5</language-level>
+        <compiler-classpath>
+          <root url="file://$USER_HOME$/.ivy2/cache/org.scala-lang/scala3-compiler_3/jars/scala3-compiler_3-3.5.1.jar" />
+          <root url="file://$USER_HOME$/.ivy2/cache/org.scala-lang/scala3-interfaces/jars/scala3-interfaces-3.5.1.jar" />
+          <root url="file://$USER_HOME$/.ivy2/cache/org.scala-lang/scala3-library_3/jars/scala3-library_3-3.5.1.jar" />
+          <root url="file://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.13.14.jar" />
+          <root url="file://$USER_HOME$/.ivy2/cache/org.scala-lang/tasty-core_3/jars/tasty-core_3-3.5.1.jar" />
+          <root url="file://$USER_HOME$/.ivy2/cache/org.scala-lang.modules/scala-asm/bundles/scala-asm-9.6.0-scala-1.jar" />
+          <root url="file://$USER_HOME$/.ivy2/cache/org.scala-sbt/compiler-interface/jars/compiler-interface-1.9.6.jar" />
+          <root url="file://$USER_HOME$/.ivy2/cache/org.scala-sbt/util-interface/jars/util-interface-1.9.8.jar" />
+          <root url="file://$USER_HOME$/.ivy2/cache/org.jline/jline-reader/jars/jline-reader-3.25.1.jar" />
+          <root url="file://$USER_HOME$/.ivy2/cache/org.jline/jline-terminal/jars/jline-terminal-3.25.1.jar" />
+          <root url="file://$USER_HOME$/.ivy2/cache/org.jline/jline-native/jars/jline-native-3.25.1.jar" />
+          <root url="file://$USER_HOME$/.ivy2/cache/org.jline/jline-terminal-jna/jars/jline-terminal-jna-3.25.1.jar" />
+          <root url="file://$USER_HOME$/.ivy2/cache/net.java.dev.jna/jna/jars/jna-5.14.0.jar" />
+        </compiler-classpath>
+        <compiler-bridge-binary-jar>file://$USER_HOME$/.ivy2/cache/org.scala-lang/scala3-sbt-bridge/jars/scala3-sbt-bridge-3.5.1.jar</compiler-bridge-binary-jar>
+      </properties>
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala3-library_3/jars/scala3-library_3-3.5.1.jar!/" />
+        <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.13.14.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala3-library_3/srcs/scala3-library_3-3.5.1-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.13.14-sources.jar!/" />
+      </SOURCES>
+    </library>
   </component>
   <component name="masterDetails">
     <states>
@@ -197,4 +329,3 @@
     </states>
   </component>
 </project>
-

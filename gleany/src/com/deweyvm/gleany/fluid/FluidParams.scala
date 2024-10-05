@@ -3,25 +3,26 @@
   *
   * This file is part of Gleany.
   *
-  * Gleany is free software: you can redistribute it and/or modify it under
-  * the terms of the GNU General Public License as published by the Free
-  * Software Foundation, either version 3 of the License, or (at your option)
-  * any later version.
+  * Gleany is free software: you can redistribute it and/or modify it under the
+  * terms of the GNU General Public License as published by the Free Software
+  * Foundation, either version 3 of the License, or (at your option) any later
+  * version.
   *
   * Gleany is distributed in the hope that it will be useful, but WITHOUT ANY
   * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
   * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
   * details.
   *
-  * You should have received a copy of the GNU General Public License along
-  * with Gleany.
+  * You should have received a copy of the GNU General Public License along with
+  * Gleany.
   *
   * If not, see <http://www.gnu.org/licenses/>.
-  * ****************************************************************************/
+  * ***************************************************************************
+  */
 
 package com.deweyvm.gleany.fluid
 
-object FluidParams {
+object FluidParams:
   def default: FluidParams = FluidParams(
     Timestep = 0.016666f,
     MaxParticles = 6000,
@@ -32,8 +33,8 @@ object FluidParams {
     RestDensity = 10,
     Stiffness = 0.504f,
     NearStiffnessFactor = 10,
-    MaxVelocity = 150f)
-}
+    MaxVelocity = 150f
+  )
 
 case class FluidParams(
     Timestep: Float,
@@ -45,4 +46,5 @@ case class FluidParams(
     RestDensity: Float,
     Stiffness: Float,
     NearStiffnessFactor: Float,
-    MaxVelocity: Float)
+    MaxVelocity: Float
+)

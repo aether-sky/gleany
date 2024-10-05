@@ -3,21 +3,22 @@
   *
   * This file is part of Gleany.
   *
-  * Gleany is free software: you can redistribute it and/or modify it under
-  * the terms of the GNU General Public License as published by the Free
-  * Software Foundation, either version 3 of the License, or (at your option)
-  * any later version.
+  * Gleany is free software: you can redistribute it and/or modify it under the
+  * terms of the GNU General Public License as published by the Free Software
+  * Foundation, either version 3 of the License, or (at your option) any later
+  * version.
   *
   * Gleany is distributed in the hope that it will be useful, but WITHOUT ANY
   * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
   * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
   * details.
   *
-  * You should have received a copy of the GNU General Public License along
-  * with Gleany.
+  * You should have received a copy of the GNU General Public License along with
+  * Gleany.
   *
   * If not, see <http://www.gnu.org/licenses/>.
-  * ****************************************************************************/
+  * ***************************************************************************
+  */
 
 package com.deweyvm.gleany.input
 
@@ -29,8 +30,9 @@ case class AxisButton(code: Int, value: Int) extends ButtonSpec
 
 case class FaceButton(code: Int) extends ButtonSpec
 
-object JoypadButton {
-  def fromString(string: String): JoypadButton = new JoypadButton(string, Map(string))
+object JoypadButton:
+  def fromString(string: String): JoypadButton =
+    new JoypadButton(string, Map(string))
 
   val Map: Map[String, ButtonSpec] = List(
     ("DPadUp", AxisButton(0, -1)),
@@ -49,14 +51,12 @@ object JoypadButton {
     ("10", FaceButton(9))
   ).toMap
 
-  //todo -- make descriptive shortcuts
-  val All: Iterable[JoypadButton] = Map map {
-    case (name, info) => new JoypadButton(name, info)
+  // todo -- make descriptive shortcuts
+  val All: Iterable[JoypadButton] = Map map { case (name, info) =>
+    new JoypadButton(name, info)
   }
 
-  def apply(s:String) = new JoypadButton(s, Map(s))
-}
+  def apply(s: String) = new JoypadButton(s, Map(s))
 
-case class JoypadButton(descriptor: String, info: ButtonSpec) {
+case class JoypadButton(descriptor: String, info: ButtonSpec):
   override def toString: String = descriptor
-}

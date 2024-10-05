@@ -1,3 +1,4 @@
 [submodule "gleany/libs"]
 	path = gleany/libs
-	url = https://github.com/deweyvm/gleany-lib.git
+	url = https://github.com/aether-sky/gleany-lib.git
+	
