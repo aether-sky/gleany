@@ -22,9 +22,9 @@
 
 package com.deweyvm.gleany.audio
 
-import com.badlogic.gdx.audio
+import com.badlogic.gdx.audio.Sound
 
-class Sfx(manager: AudioManager, sound: audio.Sound)
+class Sfx(manager: AudioManager, sound: Sound)
     extends AudioInstance(manager):
   private var adjVolume = 1f
   private var id: Option[Long] = None
