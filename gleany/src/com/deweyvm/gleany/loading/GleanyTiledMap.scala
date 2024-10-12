@@ -70,7 +70,10 @@ class GleanyTiledMap(mapName: String) extends ITiledMap:
     val pairs = tilesetNodes.toArray map { (e: XmlReader.Element) =>
       val name = e.get("name")
       val firstGid = e.getInt("firstgid")
-      val tileset = e.getChildByName("image").get("source")
+      val tileset = if e.hasChild("image") then
+        e.getChildByName("image").get("source")
+      else
+        e.get("source") //newer tiled version
     ((name, firstGid), (name, tileset))
     }
     val gids = pairs map { _._1 }
