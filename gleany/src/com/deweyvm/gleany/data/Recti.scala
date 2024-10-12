@@ -32,7 +32,7 @@ case class Recti(x: Int, y: Int, width: Int, height: Int):
   lazy val bottom: Int = y + height - 1
   lazy val center: Point2i = Point2i(x + width / 2, y + height / 2)
 
-  def expand(xAmount: Int, yAmount: Int) =
+  def expand(xAmount: Int, yAmount: Int):Recti =
     Recti(x - xAmount, y - yAmount, width + xAmount * 2, height + yAmount * 2)
 
   def contains(point: Point2d): Boolean =
